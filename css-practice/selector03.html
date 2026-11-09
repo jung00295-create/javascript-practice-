@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS 선택자 실습</title>
+
+  <style>
+    /* 첫 번째 자식 요소 */
+    p:first-child {
+      color: red;
+    }
+
+    /* 마지막 자식 요소 */
+    p:last-child {
+      color: blue;
+    }
+
+    /* 세 번째 자식 요소 */
+    p:nth-child(3) {
+      color: green;
+    }
+
+    /* 세 번째 p 요소 */
+    p:nth-of-type(2n+1) {
+      color: orange;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <p>p1</p>
+    <p>p2</p>
+    <p>p3</p>
+    <p>p4</p>
+    <p>p5</p>
+    <p>p6</p>
+  </div>
+
+  <hr>
+
+  <div>
+    <p>p1</p>
+    <span>p2</span>
+    <p>p3</p>
+    <span>p4</span>
+    <p>p5</p>
+    <p>p6</p>
+  </div>
+</body>
+</html>
+
